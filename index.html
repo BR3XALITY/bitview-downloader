@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>BitView Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,7 +20,8 @@
             font-size: 16px;
             border: 1px solid #004080;
             border-radius: 5px;
-            width: 300px;
+            width: 80%;
+            max-width: 300px;
         }
         button {
             padding: 10px 20px;
@@ -29,6 +31,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 10px;
         }
         button:hover {
             background-color: #003060;
@@ -46,6 +49,7 @@
             background-color: #004080;
             color: white;
             padding: 10px 0;
+            font-size: 14px;
         }
         footer img {
             vertical-align: middle;
@@ -53,6 +57,18 @@
             height: 24px;
             margin-left: 10px;
             cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            footer {
+                font-size: 12px;
+            }
         }
     </style>
     <script>
